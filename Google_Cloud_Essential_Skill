@@ -1,0 +1,56 @@
+------------------------------------------------------------------------>Welcome to TacticsProgrammed <-------------------------------------------------------------------------
+
+Google Cloud Essential Skills : Challange Lab
+
+Following are the Challenges of Google Cloud Essential Skills
+
+1.Create a Compute Engine instance, add necessary firewall rules.
+2.Add Apache2 HTTP Server to your instance.
+3.Test your server.
+
+
+We have to solve all the tasks step by step
+
+
+Task 1.Create a Compute Engine instance, add necessary firewall rules.
+
+Goto Compute Engine >>>>> VM Instannces >>>>> Create Instance.
+   Name : apache
+   Zone : us-central1-a
+   Series : N1
+   Boot Disk : Linux 9 
+
+   Tick the CheckBox : Allow HTTP Traffic
+                       Allow HTTPS Traffic YML
+                       
+ Create.
+
+********************************************************************************************************************************************************************************
+
+Task 2.Add Apache2 HTTP Server to your instance.
+
+Open SSH
+
+Run Following CMD in SSH
+
+sudo su -
+
+apt-get update
+
+apt-get install apache2 -y
+
+service --status-all
+
+BASH
+
+
+
+********************************************************************************************************************************************************************************
+
+Task 3.Test your server.
+
+Click on External IP of apache instance.
+
+
+
+********************************************************************************************************************************************************************************
